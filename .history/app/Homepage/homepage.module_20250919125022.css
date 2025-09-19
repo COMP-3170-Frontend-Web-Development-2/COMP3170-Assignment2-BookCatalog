@@ -11,7 +11,7 @@
     align-items: center;
     padding: var(--space-xxl) var(--space-lg);
     background-color: var(--white);
-    margin: 0 180px;
+    margin: (0 180px);
 }
 
 .homepage__content {
