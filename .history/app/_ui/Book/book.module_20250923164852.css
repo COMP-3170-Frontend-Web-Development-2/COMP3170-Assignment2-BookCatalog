@@ -9,7 +9,6 @@
     box-shadow: var(--shadow);
     overflow: hidden;
     transition: var(--transition);
-    position: relative;
 }
 
 .book:hover {
@@ -30,20 +29,11 @@
 .book_remove {
     background-color: var(--white);
     padding: 0 0.5em;
-    border-radius: 8px;
+    border: 1px solid;
     position: absolute;
     top: 0;
     right: 0;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
-    align-items: center;
-}
-
-.book_remove:hover {
-    background-color: var(--primary);
-    color: var(--white);
-    font-weight: bold;
 }
 
 .book__image {

@@ -2,7 +2,7 @@ import styles from "./book.module.css";
 
 function Book({ book }) {
     function remove(e) {
-        if (e.target === e.currentTarget) {
+        if (e.target === currentTarget) {
             return;
             // stops the propagation of the event, so if you click on the "background" of the book, it won't remove the book
         }

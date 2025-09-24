@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import styles from "./homepage.module.css";
 import Header from "../_ui/Header/header.jsx";
 import Book from "../_ui/Book/book.jsx";
+import Button from "../_ui/Button/button.jsx";
 import Footer from "../_ui/Footer/footer.jsx";
 import booksData from "../../data/books.json";
 import BookForm from "../_ui/BookForm/bookform.jsx";
@@ -14,6 +15,11 @@ function Homepage() {
         setBooks(booksData);
     }, []);
 
+    // Add Book
+    function handleAddBook() {
+        alert("Add Book clicked!");
+    }
+
     return (
         <div className={styles.homepage}>
             <Header />
@@ -22,8 +28,8 @@ function Homepage() {
                 <div className={styles.homepage__content}>
                     <div>
                         <Modal
-                            buttontitle='+ Add new Book'
-                            buttonstyle='buttonstyle'>
+                            btnLabel='Add new Book'
+                            btnClassName='btn primary'>
                             <BookForm />
                         </Modal>
                     </div>

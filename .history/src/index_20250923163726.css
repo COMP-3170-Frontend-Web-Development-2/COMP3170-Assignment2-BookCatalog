@@ -1,0 +1,50 @@
+/* CSS Variables */
+@import "./variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--grey-50);
+    color: var(--black);
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    nav {
+        padding-top: 0.5em;
+
+        button {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+
+            &:hover {
+                background-color: #141414;
+                color: #fff;
+            }
+        }
+    }
+
+    > div > form {
+        display: flex;
+        button {
+            background: #141414;
+            color: #fff;
+        }
+    }
+
+    > div {
+        display: flex;
+        gap: 1em;
+    }
+}

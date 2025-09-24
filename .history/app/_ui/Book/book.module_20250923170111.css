@@ -9,7 +9,6 @@
     box-shadow: var(--shadow);
     overflow: hidden;
     transition: var(--transition);
-    position: relative;
 }
 
 .book:hover {
@@ -37,6 +36,7 @@
     cursor: pointer;
     width: 25px;
     height: 25px;
+    display: absolute;
     align-items: center;
 }
 

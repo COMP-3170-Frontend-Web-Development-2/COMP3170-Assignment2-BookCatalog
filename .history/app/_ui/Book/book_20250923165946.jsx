@@ -16,9 +16,7 @@ function Book({ book }) {
     }
 
     return (
-        <div
-            className={styles.book}
-            onClick={remove}>
+        <div className={styles.book}>
             <div className={styles.book__imageContainer}>
                 <img
                     src={book.image}

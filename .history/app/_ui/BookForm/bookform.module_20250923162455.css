@@ -1,0 +1,42 @@
+.form_container {
+    padding: 0 2em;
+
+    > form {
+        padding: 2em;
+
+        button {
+            margin-left: 10em;
+        }
+    }
+
+    .form_control {
+        label {
+            display: inline-block;
+            width: 10em;
+        }
+        margin: 1em 0;
+    }
+}
+
+.book_button {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    font-size: var(--font-size-xl);
+    width: 80px;
+    height: 32px;
+    font-size: var(--font-size-small);
+    padding: var(--space-xs) var(--space-sm);
+}
+
+.book_button--add:hover:not(:disabled) {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+dialog::backdrop {
+    background: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}

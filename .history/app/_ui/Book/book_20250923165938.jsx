@@ -1,6 +1,6 @@
 import styles from "./book.module.css";
 
-function Book({ book }) {
+function Book({ book, onRemove }) {
     function remove(e) {
         if (e.target === e.currentTarget) {
             return;
@@ -16,9 +16,7 @@ function Book({ book }) {
     }
 
     return (
-        <div
-            className={styles.book}
-            onClick={remove}>
+        <div className={styles.book}>
             <div className={styles.book__imageContainer}>
                 <img
                     src={book.image}

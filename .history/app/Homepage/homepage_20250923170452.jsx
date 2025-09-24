@@ -38,6 +38,11 @@ function Homepage() {
                                     image: book.image,
                                     detailsUrl: book.url,
                                 }}
+                                onRemove={() => {
+                                    setBooks((prev) =>
+                                        prev.filter((_, i) => i !== index)
+                                    );
+                                }}
                             />
                         ))}
                     </div>

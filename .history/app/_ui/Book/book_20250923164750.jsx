@@ -16,9 +16,7 @@ function Book({ book }) {
     }
 
     return (
-        <div
-            className={styles.book}
-            onClick={remove}>
+        <div className={styles.book}>
             <div className={styles.book__imageContainer}>
                 <img
                     src={book.image}
@@ -27,7 +25,9 @@ function Book({ book }) {
                 />
             </div>
 
-            <div className={styles.book__content}>
+            <div
+                className={styles.book__content}
+                onClick={remove}>
                 <p className={styles.book__price}>{book.price}</p>
                 <a
                     href={book.detailsUrl}

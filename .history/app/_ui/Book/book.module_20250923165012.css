@@ -9,7 +9,6 @@
     box-shadow: var(--shadow);
     overflow: hidden;
     transition: var(--transition);
-    position: relative;
 }
 
 .book:hover {
@@ -35,9 +34,8 @@
     top: 0;
     right: 0;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
-    align-items: center;
+    width: 10px;
+    height: 10px;
 }
 
 .book_remove:hover {
